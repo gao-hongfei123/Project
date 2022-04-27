@@ -1,0 +1,6 @@
+F:\c#_code\StudentSys\StudentSys.DAL\bin\Debug\StudentSys.DAL.dll
+F:\c#_code\StudentSys\StudentSys.DAL\bin\Debug\StudentSys.DAL.pdb
+F:\c#_code\StudentSys\StudentSys.DAL\obj\Debug\StudentSys.DAL.csproj.AssemblyReference.cache
+F:\c#_code\StudentSys\StudentSys.DAL\obj\Debug\StudentSys.DAL.csproj.CoreCompileInputs.cache
+F:\c#_code\StudentSys\StudentSys.DAL\obj\Debug\StudentSys.DAL.dll
+F:\c#_code\StudentSys\StudentSys.DAL\obj\Debug\StudentSys.DAL.pdb
