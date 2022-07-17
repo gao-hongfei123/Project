@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+
+@{
+}
+<h1>角色列表</h1>
+<a asp-action="createRole" asp-controller="admin">添加新角色</a>
+@foreach(var item in Model)
+{
+    <div>角色id：@item.Id</div>
+    <div>角色名称：@item.Name</div>
+    <div>
+        <a asp-controller="admin" asp-action="editRole">编辑角色</a>
+    </div>
+    <div><a asp-controller="admin" asp-action="deleteRole">删除角色</a></div>
+}
