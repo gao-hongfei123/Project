@@ -1,0 +1,12 @@
+﻿@model ProductListViewModel
+@using SportStore.Models.ViewModels
+@{
+}
+@foreach(var temp in Model.Products ) {
+    <div>
+        <h3>@temp.Name</h3>
+        @temp.Description
+        <h4>@temp.Price.ToString("c")</h4>
+    </div>
+}
+
