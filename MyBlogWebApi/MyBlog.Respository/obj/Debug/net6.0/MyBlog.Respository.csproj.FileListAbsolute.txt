@@ -1,0 +1,17 @@
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.Respository.deps.json
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.Respository.dll
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.Respository.pdb
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.IRespository.dll
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.Model.dll
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.IRespository.pdb
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\bin\Debug\net6.0\MyBlog.Model.pdb
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.csproj.AssemblyReference.cache
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.GeneratedMSBuildEditorConfig.editorconfig
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.AssemblyInfoInputs.cache
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.AssemblyInfo.cs
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.csproj.CoreCompileInputs.cache
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.csproj.CopyComplete
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.dll
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\refint\MyBlog.Respository.dll
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\MyBlog.Respository.pdb
+F:\c#_code\MyBlogWebApi\MyBlog.Respository\obj\Debug\net6.0\ref\MyBlog.Respository.dll

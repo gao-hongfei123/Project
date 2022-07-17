@@ -1,0 +1,6 @@
+F:\c#_code\StudentSys\StudentSys.BLL\bin\Debug\StudentSys.BLL.dll
+F:\c#_code\StudentSys\StudentSys.BLL\bin\Debug\StudentSys.BLL.pdb
+F:\c#_code\StudentSys\StudentSys.BLL\obj\Debug\StudentSys.BLL.csproj.AssemblyReference.cache
+F:\c#_code\StudentSys\StudentSys.BLL\obj\Debug\StudentSys.BLL.csproj.CoreCompileInputs.cache
+F:\c#_code\StudentSys\StudentSys.BLL\obj\Debug\StudentSys.BLL.dll
+F:\c#_code\StudentSys\StudentSys.BLL\obj\Debug\StudentSys.BLL.pdb

@@ -1,0 +1,6 @@
+F:\c#_code\StudentSys\StudentSys.DTO\bin\Debug\StudentSys.DTO.dll
+F:\c#_code\StudentSys\StudentSys.DTO\bin\Debug\StudentSys.DTO.pdb
+F:\c#_code\StudentSys\StudentSys.DTO\obj\Debug\StudentSys.DTO.csproj.AssemblyReference.cache
+F:\c#_code\StudentSys\StudentSys.DTO\obj\Debug\StudentSys.DTO.csproj.CoreCompileInputs.cache
+F:\c#_code\StudentSys\StudentSys.DTO\obj\Debug\StudentSys.DTO.dll
+F:\c#_code\StudentSys\StudentSys.DTO\obj\Debug\StudentSys.DTO.pdb

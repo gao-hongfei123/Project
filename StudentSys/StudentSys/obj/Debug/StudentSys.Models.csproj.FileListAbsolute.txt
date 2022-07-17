@@ -1,0 +1,14 @@
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.Models.csproj.AssemblyReference.cache
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.Models.csproj.CoreCompileInputs.cache
+F:\c#_code\StudentSys\StudentSys\bin\Debug\StudentSys.dll.config
+F:\c#_code\StudentSys\StudentSys\bin\Debug\StudentSys.dll
+F:\c#_code\StudentSys\StudentSys\bin\Debug\StudentSys.pdb
+F:\c#_code\StudentSys\StudentSys\bin\Debug\EntityFramework.dll
+F:\c#_code\StudentSys\StudentSys\bin\Debug\EntityFramework.SqlServer.dll
+F:\c#_code\StudentSys\StudentSys\bin\Debug\EntityFramework.xml
+F:\c#_code\StudentSys\StudentSys\bin\Debug\EntityFramework.SqlServer.xml
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.Models.csproj.CopyComplete
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.dll
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.pdb
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.Migrations.createDb.resources
+F:\c#_code\StudentSys\StudentSys\obj\Debug\StudentSys.Models.csproj.GenerateResource.cache
