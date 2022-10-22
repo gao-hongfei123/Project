@@ -1,0 +1,16 @@
+F:\c#_code\code\BookShopTudo\BookShopTudo\bin\Debug\BookShopTudo.exe.config
+F:\c#_code\code\BookShopTudo\BookShopTudo\bin\Debug\BookShopTudo.exe
+F:\c#_code\code\BookShopTudo\BookShopTudo\bin\Debug\BookShopTudo.pdb
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.csproj.AssemblyReference.cache
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.csproj.SuggestedBindingRedirects.cache
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Books.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Form1.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Login.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Properties.Resources.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Users.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.csproj.GenerateResource.cache
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.csproj.CoreCompileInputs.cache
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.exe
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.pdb
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.dashboard.resources
+F:\c#_code\code\BookShopTudo\BookShopTudo\obj\Debug\BookShopTudo.Billing.resources
