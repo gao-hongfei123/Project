@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "XO2e7QscczTZ4zSKzV+3Rt3W335eEgzfi8nNWfEkZZQB9Hktjt/rVsDNkzi9biAeRRzohL/pIghtUr/bJihpdA==",
+  "success": true,
+  "projectFilePath": "F:\\c#_code\\code\\WpfHelloworld\\WpfHelloworld\\WpfHelloworld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\microsoft.sdk.expression.blend\\1.0.0\\microsoft.sdk.expression.blend.1.0.0.nupkg.sha512",
+    "C:\\Users\\A\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\A\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\A\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0-windows7.0”还原包“Microsoft.SDK.Expression.Blend 1.0.0”。此包可能与项目不完全兼容。",
+      "libraryId": "Microsoft.SDK.Expression.Blend",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
