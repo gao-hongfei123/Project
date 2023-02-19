@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JuRXNg5Oubs9WIefkFTQwaJMB8HTEhf0uajTQFtA5m/JNAx6Ip9iMVK3CTEQWR8GukqltMtfh6ve2jqpQHfMfA==",
+  "success": true,
+  "projectFilePath": "F:\\c#_code\\code\\WpfSample1\\WpfSample1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\A\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

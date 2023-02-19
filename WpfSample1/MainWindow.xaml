@@ -1,0 +1,457 @@
+﻿<Window
+    x:Class="WpfSample1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+    <Window.Resources>
+        <Style
+            x:Key="defaultRadioStyle"
+            TargetType="RadioButton">
+            <Setter
+                Property="Background"
+                Value="Transparent" />
+            <Setter
+                Property="BorderThickness"
+                Value="0" />
+            <Setter
+                Property="FocusVisualStyle"
+                Value="{x:Null}" />
+            <Setter
+                Property="VerticalAlignment"
+                Value="Center" />
+            <Setter
+                Property="HorizontalContentAlignment"
+                Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="75"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+        <Border
+            Background="#59E6B5"
+            HorizontalAlignment="Left"
+            Margin="10,0,0,0"
+            VerticalAlignment="Center"
+            Width="30"
+            Height="30"
+            CornerRadius="30" />
+        <Border
+            Background="#FF7900"
+            HorizontalAlignment="Left"
+            Margin="-5,0,0,0"
+            VerticalAlignment="Center"
+            Width="30"
+            Height="30"
+            CornerRadius="30" />
+            <TextBlock
+                Text="HYPERS"
+                FontSize="18"
+                VerticalAlignment="Center"
+                FontWeight="Bold"
+                FontFamily="#4F5050" 
+                Margin="20"/>
+                    <UniformGrid
+                        Columns="5">
+                        <RadioButton
+                            VerticalAlignment="Center"
+                            Style="{StaticResource defaultRadioStyle}">
+                            
+                            <StackPanel
+                                Orientation="Horizontal">
+                                <TextBlock
+                                    Text="DashBoard"
+                                    Margin="10,0,0,0"
+                                    VerticalAlignment="Center" />
+                            </StackPanel>
+                        </RadioButton>
+                <RadioButton
+                    VerticalAlignment="Center"
+                    Style="{StaticResource defaultRadioStyle}">
+
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Text="Apps"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton
+                    VerticalAlignment="Center"
+                    Style="{StaticResource defaultRadioStyle}">
+
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Text="Pages"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton
+                    VerticalAlignment="Center"
+                    Style="{StaticResource defaultRadioStyle}">
+
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Text="UI Kit"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton
+                    VerticalAlignment="Center"
+                    Style="{StaticResource defaultRadioStyle}">
+
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Text="DashBoard"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                </RadioButton>
+            </UniformGrid>
+        </StackPanel>
+        <!--头像区域-->
+        <StackPanel
+            Grid.Column="1" HorizontalAlignment="Center" Orientation="Horizontal">
+        <Image
+            Source="Images/2.jpg"
+            Width="80"
+            Height="80"
+            >
+            <!--将矩形图片裁剪成圆形-->
+                <Image.Clip>
+                    <EllipseGeometry
+                        RadiusX="25"
+                        RadiusY="25"
+                        Center="25,25" />
+                </Image.Clip>
+        </Image>
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock
+                    Text="Naved Mirza" />
+                <TextBlock
+                    Text="Admin" Foreground="#4F5050"/>
+            </StackPanel>
+        </StackPanel>
+        <!--右侧用户蓝-->
+        <Grid Grid.Row="1" Grid.Column="1" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock
+                Text="Chat"
+                FontSize="30"
+                Foreground="#566872"
+                VerticalAlignment="Bottom"
+                Margin="20,0,0,0" />
+            <Border
+                Width="80"
+                Height="30"
+                BorderThickness="1"
+                VerticalAlignment="Bottom"
+                BorderBrush="#A4ADB2"
+                HorizontalAlignment="Right"
+                Margin="0,0,20,0"
+                CornerRadius="10">
+                <TextBlock
+                    Text="SEE ALL"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" />
+            </Border>
+            <Image
+                Grid.Row="2"
+                Source="Images/7.jpeg"
+                Stretch="Fill" />
+            <ItemsControl ItemsSource="{Binding userModules}" Grid.Row="1">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            Grid.Row="1"
+                            VerticalAlignment="Top"
+                            Margin="0,20,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition
+                                    Width="2*" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Image
+                                Grid.Column="0"
+                                Source="{Binding FilePath}">
+                                <Image.Clip>
+                                    <EllipseGeometry
+                                        RadiusX="10"
+                                        RadiusY="10"
+                                        Center="25,25" />
+                                </Image.Clip>
+                            </Image>
+                            <StackPanel
+                                Grid.Column="1"
+                                VerticalAlignment="Center">
+                                <TextBlock
+                                    Text="{Binding UserName}" />
+                                <TextBlock
+                                    Text="{Binding Content}"
+                                    Foreground="#88949A" />
+                            </StackPanel>
+                            <TextBlock
+                                Grid.Column="2"
+                                VerticalAlignment="Center"
+                                Text="32 min"
+                                Foreground="#88949A" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          
+        </Grid>
+        <!--主体内容-->
+        <Grid ShowGridLines="True" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock
+                    Text="Message Data"
+                    FontSize="22"
+                    Foreground="#586A73"
+                    VerticalAlignment="Center" />
+                <StackPanel
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right">
+                    <Border Height="25" Width="80" CornerRadius="10" BorderThickness="1" Margin="0,0,15,0" BorderBrush="#A4ADB2">
+                        <TextBlock
+                            Text="DAY"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center" />
+                    </Border><Border Height="25" Width="80" CornerRadius="10" BorderThickness="1" Margin="0,0,15,0" BorderBrush="#A4ADB2">
+                        <TextBlock
+                            Text="MONTH"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center" />
+                    </Border><Border Height="25" Width="80" CornerRadius="10" BorderThickness="1" Margin="0,0,15,0" BorderBrush="#A4ADB2">
+                        <TextBlock
+                            Text="YEAR"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center" />
+                    </Border>
+                </StackPanel>
+                <UniformGrid
+                    Columns="3"
+                    Grid.Row="1">
+                    <Grid>
+                        <Border
+                            Background="#FF7000"
+                            Margin="50,20,50,20" 
+                            CornerRadius="20"/>
+                        
+                        <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                            <Border
+                                BorderThickness="1"
+                                Height="1"
+                                BorderBrush="#EBEBEB"
+                                VerticalAlignment="Center"
+                                Grid.RowSpan="2" />
+                            <!--上班部分-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border
+                                    Background="#ffffff"
+                                    Opacity="0.2"
+                                    Width="35"
+                                    Height="35"
+                                    CornerRadius="35" VerticalAlignment="Center" HorizontalAlignment="Right">
+                                    <TextBlock
+                                        Text="第一"
+                                        FontSize="13"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        />
+                                </Border>
+                                <TextBlock
+                                    Text="Started sending at"
+                                    Grid.Column="1"
+                                    Foreground="White"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Left" 
+                                    FontSize="15"/>
+                            </Grid>
+                            <!--下班部分-->
+                            <StackPanel Grid.Row="1">
+                                <TextBlock
+                                    Text="December 05th's 19"
+                                    FontSize="20"
+                                    Margin="50,0,0,0" 
+                                    Foreground="White"/>
+                                <TextBlock
+                                    Text="December 05th's 19" 
+                                    Margin="50,10,0,0"
+                                    Foreground="White"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <Grid>
+                        <Border
+                            Background="#FFC100"
+                            Margin="50,20,50,20"
+                            CornerRadius="20" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Border
+                                BorderThickness="1"
+                                Height="1"
+                                BorderBrush="#EBEBEB"
+                                VerticalAlignment="Center"
+                                Grid.RowSpan="2" />
+                            <!--上班部分-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition
+                                        Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <Border
+                                    Background="#ffffff"
+                                    Opacity="0.2"
+                                    Width="35"
+                                    Height="35"
+                                    CornerRadius="35"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right">
+                                    <TextBlock
+                                        Text="第一"
+                                        FontSize="13"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" />
+                                </Border>
+                                <TextBlock
+                                    Text="Started sending at"
+                                    Grid.Column="1"
+                                    Foreground="White"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Left"
+                                    FontSize="15" />
+                            </Grid>
+                            <!--下班部分-->
+                            <StackPanel
+                                Grid.Row="1">
+                                <TextBlock
+                                    Text="December 05th's 19"
+                                    FontSize="20"
+                                    Margin="50,0,0,0"
+                                    Foreground="White" />
+                                <TextBlock
+                                    Text="December 05th's 19"
+                                    Margin="50,10,0,0"
+                                    Foreground="White" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <Grid>
+                        <Border
+                            Background="#59E685"
+                            Margin="50,20,50,20"
+                            CornerRadius="20" />
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Border
+                                BorderThickness="1"
+                                Height="1"
+                                BorderBrush="#EBEBEB"
+                                VerticalAlignment="Center"
+                                Grid.RowSpan="2" />
+                            <!--上班部分-->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition
+                                        Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <Border
+                                    Background="#ffffff"
+                                    Opacity="0.2"
+                                    Width="35"
+                                    Height="35"
+                                    CornerRadius="35"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right">
+                                    <TextBlock
+                                        Text="第一"
+                                        FontSize="13"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" />
+                                </Border>
+                                <TextBlock
+                                    Text="Started sending at"
+                                    Grid.Column="1"
+                                    Foreground="White"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Left"
+                                    FontSize="15" />
+                            </Grid>
+                            <!--下班部分-->
+                            <StackPanel
+                                Grid.Row="1">
+                                <TextBlock
+                                    Text="December 05th's 19"
+                                    FontSize="20"
+                                    Margin="50,0,0,0"
+                                    Foreground="White" />
+                                <TextBlock
+                                    Text="December 05th's 19"
+                                    Margin="50,10,0,0"
+                                    Foreground="White" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </UniformGrid>
+
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>
