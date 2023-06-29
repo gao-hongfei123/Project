@@ -1,0 +1,12 @@
+F:\c#_code\code\Todo3.Wpf.Shared\bin\Debug\net6.0\Todo3.Wpf.Shared.deps.json
+F:\c#_code\code\Todo3.Wpf.Shared\bin\Debug\net6.0\Todo3.Wpf.Shared.dll
+F:\c#_code\code\Todo3.Wpf.Shared\bin\Debug\net6.0\Todo3.Wpf.Shared.pdb
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.csproj.AssemblyReference.cache
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.AssemblyInfoInputs.cache
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.AssemblyInfo.cs
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.csproj.CoreCompileInputs.cache
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.dll
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\refint\Todo3.Wpf.Shared.dll
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\Todo3.Wpf.Shared.pdb
+F:\c#_code\code\Todo3.Wpf.Shared\obj\Debug\net6.0\ref\Todo3.Wpf.Shared.dll

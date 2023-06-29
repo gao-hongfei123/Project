@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\bin</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="MyTodo3Db.ldf">
+      <publishTime>06/03/2023 17:21:42</publishTime>
+    </File>
+    <File Include="MyTodo3Db.mdf">
+      <publishTime>06/03/2023 17:21:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

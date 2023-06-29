@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="Todo3.Wpf.Views.TodoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Todo3.Wpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             >
+    <md:DrawerHost IsRightDrawerOpen="{Binding IsDrawerOpen}" x:Name="drawer">
+        <md:DrawerHost.RightDrawerContent >
+            <StackPanel Width="200">
+                <TextBlock
+                    Text="添加代办"  Margin="10,20" FontSize="16" FontWeight="Bold"/>
+                <StackPanel
+                    Orientation="Horizontal" Margin="10,0">
+                <TextBlock
+                    Text="状态:" VerticalAlignment="Center"/>
+                    <ComboBox SelectedIndex="0" Margin="10,0">
+                        <ComboBoxItem>代办</ComboBoxItem>
+                        <ComboBoxItem>已完成</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <TextBox
+                    md:HintAssist.Hint="请输入代办事项" Margin="5,20"  Text="{Binding CurrentDto.Title}"/>
+                <TextBox
+                    md:HintAssist.Hint="请输入代办内容" Height="100" Margin="5,0" Text="{Binding CurrentDto.Content}"/>
+                <Button
+                    Content="添加到代办" Margin="10" Command="{Binding SaveCommand}"/>
+            </StackPanel>
+        </md:DrawerHost.RightDrawerContent>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="False">
+                <TextBox
+                    Width="200"
+                    VerticalAlignment="Center"
+                    md:HintAssist.Hint="请输入代办事项"
+                    Margin="10,0"
+                    Text="{Binding Search,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" >
+                    <TextBox.InputBindings >
+                        <KeyBinding
+                            Key="Enter"
+                            Command="{Binding SearchCommand}" />
+                    </TextBox.InputBindings>
+                </TextBox>
+        <TextBlock
+            Text="筛选" 
+            Margin="10"
+            VerticalAlignment="Center"/>
+        <ComboBox SelectedIndex="0" VerticalAlignment="Center">
+            <ComboBoxItem>全部</ComboBoxItem>
+            <ComboBoxItem>代办</ComboBoxItem>
+            <ComboBoxItem>已完成</ComboBoxItem>
+        </ComboBox>
+            <Button
+                DockPanel.Dock="Right"
+                Content="+添加代办" Margin="10" Command="{Binding AddCommand}"/>
+        </DockPanel>
+        <Grid Grid.Row="1">
+            <ScrollViewer>
+        <ItemsControl ItemsSource="{Binding TodoDtos}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="180" Height="150" Background="Green" Margin="10" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger
+                                            EventName="MouseLeftButtonUp">
+                                            <i:InvokeCommandAction
+                                                Command="{Binding DataContext.SelectCommand, 
+                                     RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}}"
+                                                CommandParameter="{Binding}">
+                                            </i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                    <TextBlock
+                            Text="{Binding Title}" Margin="10"/>
+                        <TextBlock
+                            Text="{Binding Content}" Margin="10"/>
+                    </StackPanel>
+                    
+                   </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+    </md:DrawerHost>
+</UserControl>

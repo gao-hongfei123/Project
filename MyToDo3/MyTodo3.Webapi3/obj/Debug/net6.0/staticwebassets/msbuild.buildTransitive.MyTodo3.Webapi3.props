@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MyTodo3.Webapi3.props" />
+</Project>
